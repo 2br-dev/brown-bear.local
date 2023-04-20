@@ -3,3 +3,4 @@ src/design
 release/static
 .idea
 .vscode
+release/core/cache
