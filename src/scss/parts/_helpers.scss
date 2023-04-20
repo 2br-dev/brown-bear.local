@@ -1,0 +1,315 @@
+body{
+
+	// & section{
+	// 	overflow-x: hidden;
+	// }
+
+	& *:focus{
+		outline: none;
+	}
+
+	& section{
+		margin: 4vmax 0;
+	}
+
+	a{
+		color: $text;
+	}
+
+	& .pin{
+		position: sticky;
+		top: 80px;
+	}
+
+	& .no-margin{
+		margin: 0;
+	}
+
+	& .input-field{
+
+		border-bottom: 1px solid #ccc;
+		padding-top: 15px;
+		position: relative;
+		margin: 20px 0;
+
+		& textarea{
+			height: 55px;
+			min-height: 55px;
+		}
+
+		& input[type=text], 
+		& input[type=tel],
+		& textarea{
+			display: block;
+			border: 0;
+			width: 100%;
+			font-family: 'Montserrat';
+			font-size: calc(16px + .2vmax);
+			padding: 11px 0;
+			line-height: 1.4em;
+			resize: vertical;
+			background-color: transparent;
+
+			&::placeholder{
+				color: transparent;
+			}
+
+			& ~ label{
+				position: absolute;
+				left: 0;
+				top: 26px;
+				transition: top .2s, font-size .2s;
+				pointer-events: none;
+			}
+
+			& ~ .indicator{
+				position: absolute;
+				top: 100%;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				transition: transform .2s;
+				transform: scaleX(0);
+				background-color: $primary;
+			}
+
+			&:focus, &:not(:placeholder-shown){
+
+				outline: none;
+
+				& ~ label{
+
+					font-size: 12px;
+					top: 0;
+				}
+			}
+
+			&:focus ~ .indicator{
+				transform: none;
+			}
+		}
+	}
+
+	& input[type=checkbox]{
+		display: none;
+
+		& + label{
+			display: flex;
+			cursor: pointer;
+			user-select: none;
+
+			&:before{
+				content: '\F0131';
+				font-family: 'Material Design Icons';
+				margin-right: 6px;
+			}
+		}
+
+		&:checked + label:before{
+			content: '\F0132';
+		}
+	}
+
+	& #sizer{
+		font-family: 'Montserrat';
+		margin: 0;
+		position: fixed;
+		top: 100px;
+		left: 20px;
+		box-shadow:  0 0 0 1px red;
+
+	}
+
+	& .bttn{
+		display: inline-block;
+		white-space: nowrap;
+		padding: 10px 20px;
+		background-color: $primary;
+		transition: background-color .2s;
+		
+		&:hover{
+			background-color: $primary-dark;
+		}
+	}
+
+	& .bttn-black{
+		@extend .bttn;
+		background-color: $text;
+		color: #fff;
+
+		&:hover{
+			background: lighten($text, 20);
+		}
+	}
+
+	& .no-margin{
+		margin: 0;
+	}
+
+	& .no-padding{
+		padding: 0;
+	}
+
+	& section{
+
+		&#hero{
+
+			margin: 0;
+			background-size: cover;
+			position: relative;
+	
+			& .content{
+				margin: 0;
+				height: 100%;
+	
+				& .col{
+					height: 100%;
+					display: flex;
+					align-items: center;
+					padding-left: 8.3%;
+					background-color: rgba(black, .5);
+					backdrop-filter: blur(10px);
+				}
+	
+				& h1{
+					
+					color: #fff;
+	
+					& span{
+						color: $primary;
+						display: block;
+						font-size: 1em;
+					}
+				}
+	
+				& p{
+					color: #fff;
+				}
+			}
+	
+			& .lines{
+	
+				position: absolute;
+				bottom: 10%;
+				width: 100%;
+	
+				& .col{
+	
+					&:first-of-type{
+						padding-left: 0;
+					}
+				}
+	
+				& .line{
+					height: 8px;
+	
+					&.primary{
+						background-color: $primary;
+					}
+				}
+			}
+		}
+
+		&#points{
+
+			& .point{
+				border-left: 4px solid $primary;
+				padding-left: 1rem;
+
+				& h2{
+					margin-bottom: 0;
+				}
+
+				& p{
+					margin-top: 0;
+					font-size: 16px;
+				}
+			}
+		}
+
+		&#form{
+			background-color: $primary;
+			padding: 4vmax 0;
+			margin-bottom: 0;
+
+			& .form-intro{
+
+				padding-left: 1rem;
+				border-left: 4px solid $text;
+
+				& h2{
+					margin: 0;
+				}
+
+				& p{
+					margin-bottom: 0;
+				}
+
+				@media(max-width: $large){
+					margin-bottom: $gutter-width;
+				}
+			}
+
+			& .input-field-accent{
+				margin-bottom: $gutter-width;
+
+				& input,
+				& textarea{
+					border: 0;
+					display: block;
+					width: 100%;
+					padding: .7rem;
+					border-left: 4px transparent solid;
+					transition: border-color .2s;
+					resize: vertical;
+
+					&:focus{
+						border-left: 4px $text solid;
+					}
+				}
+
+				& textarea{
+					min-height: 96px;
+				}
+			}
+
+			& label[for="agree"]{
+				margin-bottom: 30px;
+			}
+
+			& a:not(.bttn-black):hover{
+				text-decoration: underline;
+				text-decoration-thickness: 1px;
+				text-underline-offset: 2px;
+			}
+		}
+	}
+
+	& .sidenav{
+
+		& li{
+
+			& a{
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+
+	& .toast{
+
+		&.quad-toast{
+			border-radius: 0;
+			border-left: 4px solid;
+			
+			&.success{
+				border-color: $success;
+			}
+			
+			&.error{
+				border-color: $critical;
+			}
+		}
+	}
+}

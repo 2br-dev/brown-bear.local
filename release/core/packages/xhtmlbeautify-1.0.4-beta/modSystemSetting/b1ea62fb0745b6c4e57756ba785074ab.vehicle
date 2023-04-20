@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'xhtmlbeautify',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ae8bc0ff6992b22fe71528d5bf6a49df',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'b1ea62fb0745b6c4e57756ba785074ab',
+  'native_key' => 'xhtmlbeautify.ignored_tags',
+  'object' => '{"key":"xhtmlbeautify.ignored_tags","value":"pre, script, textarea","xtype":"textarea","namespace":"xhtmlbeautify","area":"ignore-config","editedon":null,"description":"setting_xhtmlbeautify.ignored_tags_desc"}',
+);

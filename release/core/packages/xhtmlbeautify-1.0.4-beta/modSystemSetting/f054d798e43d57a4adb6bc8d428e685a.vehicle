@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'xhtmlbeautify',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c72190dc87048e5c7ff984bb0df157ba',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f054d798e43d57a4adb6bc8d428e685a',
+  'native_key' => 'xhtmlbeautify.convert_quotes',
+  'object' => '{"key":"xhtmlbeautify.convert_quotes","value":0,"xtype":"combo-boolean","namespace":"xhtmlbeautify","area":"output-cleaning","editedon":null,"description":"setting_xhtmlbeautify.convert_quotes_desc"}',
+);

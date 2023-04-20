@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+@@include('./parts/head.html', {title: 'Страница услуги', style: 'service'})
+</head>
+<body>
+	@@include('./parts/header.html')
+	<main id="service">
+		<section id="hero" class="lazy" data-bg="/img/service-hero.jpg">
+			<div class="row content">
+				<div class="col m6">
+					<div class="hero-content">
+						<h1>Архитектурное освещение</h1>
+						<p>
+							Архитектурное освещение зданий — необходимость в реалиях такого большого 
+							современного города, как Краснодар. Наша команда промышленных альпинистов 
+							осуществляет монтаж наружной подсветки, которая помогаем девелоперам ярко 
+							выделить свои объекты на фоне конкурентов будь то проекты типовой застройки, 
+							элитные многоквартирные комплексы, промышленные предприятия или даже мосты.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row lines">
+				<div class="col xs1">
+					<div class="line white"></div>
+				</div>
+				<div class="col xs1">
+					<div class="line white"></div>
+				</div>
+				<div class="col xs1">
+					<div class="line white"></div>
+				</div>
+				<div class="col xs8 no-padding">
+					<div class="line primary"></div>
+				</div>
+			</div>
+		</section>
+		<section id="points">
+			<div class="container">
+				<div class="row">
+					<div class="col l4 m6 s12">
+						<div class="point">
+							<h2>Монтаж</h2>
+							<p>линейных и точечных светильников, RGB светильников, гибкого неона и диодной ленты в профиле</p>
+						</div>
+					</div>
+					<div class="col l4 m6 s12">
+						<div class="point">
+							<h2>Прокладка</h2>
+							<p>силовых линий и слаботочных линий управления</p>
+						</div>
+					</div>
+					<div class="col l4 m6 offset-m3 s12">
+						<div class="point">
+							<h2>Системы управления</h2>
+							<p>установка и демонтаж систем управления освещением</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="form">
+			<div class="container">
+				<div class="row no-margin">
+					<div class="col xl5 l6 m12 s12">
+						<div class="form-intro">
+							<h2>Закажите услугу монтажа архитектурного освещения</h2>
+							<p>Мы проведём все необходимые замеры, подберём необходимое оборудование 
+								и качественно выполним поставленную задачу</p>
+						</div>
+					</div>
+					<div class="col l6 m12 offset-xl1 s12">
+						<div class="row no-margin">
+							<div class="col m6 s12">
+								<div class="input-field-accent"><input type="text" placeholder="* Фамилия, имя, отчество"></div>
+							</div>
+							<div class="col m6 s12">
+								<div class="input-field-accent"><input type="text" placeholder="* Номер телефона"></div>
+							</div>
+							<div class="col s12">
+								<div class="input-field-accent"><textarea name="" id="" cols="30" rows="0" placeholder="* Комментарий"></textarea></div>
+							</div>
+							<div class="col s12 right-align"><a href="" class="bttn-black">Отправить</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="gallery" class="no-margin no-padding">
+			<div class="row flex no-margin">
+				<div class="col no-padding l6 m8 s12 service-slider-wrapper">
+					<h2 class="hide-m-up">Фотогалерея</h2>
+					<a href="#!" class="hide-m-up mdi mdi-chevron-left service-prev"></a>
+					<a href="#!" class="hide-m-up mdi mdi-chevron-right service-next"></a>
+					<div class="swiper" id="service-slider">
+						<div class="swiper-wrapper">
+							@@loop('./parts/gallery-slide.html', './data/gallery.json')
+						</div>
+					</div>
+				</div>
+				<div class="col l5 m4 hide-m-down">
+					<div class="row gallery-wrapper">
+						<div class="col s12">
+							<div class="row">
+								<div class="col s12">
+									<h2 class="styled">Фотогалерея</h2>
+								</div>
+								@@loop('./parts/gallery-thumb.html', './data/gallery.json')
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('./parts/contacts-block.html')
+	</main>
+	@@include('./parts/footer.html')
+	<script src="/js/master.js"></script>
+</body>
+</html>

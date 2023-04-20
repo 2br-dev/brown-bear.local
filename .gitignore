@@ -1,0 +1,5 @@
+node_modules
+src/design
+release/static
+.idea
+.vscode

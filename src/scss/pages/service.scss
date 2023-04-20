@@ -1,0 +1,122 @@
+@import '../parts/vars';
+
+body{
+
+	& section{
+
+		&#hero{
+
+			background-position: center center;
+			
+			& .hero-content{
+				padding-bottom: 15%;
+				min-height: 70vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding-right: 4vmax;
+
+				@media(max-width: $large){
+					padding-bottom: 35%;
+				}
+			}
+		}
+
+		&#gallery{
+
+			& #service-slider{
+
+				height: 100%;
+				min-height: 60vh;
+
+				& .swiper-slide{
+
+					& .lazy{
+						height: 100%;
+						background-size: cover;
+						background-position: center center;
+					}
+				}
+			}
+
+			& .service-slider-wrapper{
+
+				position: relative;
+
+				& h2{
+					margin: 0;
+					padding: .5em;
+					position: absolute;
+					z-index: 2;
+					width: 100%;
+					background: linear-gradient(to bottom, rgba(black, .7), rgba(black, 0));
+					color: #fff;
+					text-align: center;
+				}
+				& .service-prev{
+
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					transform: translateY(-50%);
+					width: 60px;
+					height: 60px;
+					text-align: center;
+					line-height: 60px;
+					font-size: 32px;
+					color: #fff;
+					background-color: rgba(black, .4);
+					cursor: pointer;
+					z-index: 2;
+			
+					&:hover{
+						background-color: rgba(black, .8);
+					}
+				}
+
+				& .service-next{
+					@extend .service-prev;
+					left: unset;
+					right: 0;
+				}
+			}
+
+			& .gallery-wrapper{
+				height: 100%;
+				display: flex;
+				align-items: center;
+
+				& [data-slide]{
+
+					margin-bottom: $gutter-width;
+					transition: box-shadow .2s, filter .2s;
+					cursor: pointer;
+					position: relative;
+
+					&:before{
+						content: '';
+						display: block;
+						width: 100%;
+						height: 100%;
+						transition: box-shadow .2s;
+						box-shadow: 0 0 0 0px $primary inset;
+						position: absolute;
+					}
+
+					& img{
+						display: block;
+					}
+
+					&:hover{
+						filter: brightness(1.2);
+					}
+
+					&.active:before{
+						box-shadow: 0 0 0 6px $primary inset;
+					}
+				}
+			}
+		}
+	}
+}

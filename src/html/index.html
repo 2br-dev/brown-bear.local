@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+@@include('./parts/head.html', {title: 'Главная', style: 'main'})
+</head>
+<body>
+	@@include('./parts/header.html')
+	<main id="main">
+		<section id="hero" class="lazy" data-bg="/img/main_hero.jpg">
+			<div class="row content">
+				<div class="col m6 offset-m6">
+					<div class="hero-content">
+						<img alt="" class="lazy" data-src="/img/hero-logo.svg">
+						<h1>Все виды <span>высотных работ</span> в Краснодаре</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row lines">
+				<div class="col xs8">
+					<div class="line primary"></div>
+				</div>
+				<div class="col xs1">
+					<div class="line white"></div>
+				</div>
+				<div class="col xs1">
+					<div class="line white"></div>
+				</div>
+				<div class="col xs1">
+					<div class="line white"></div>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<h2 class="styled">О нас</h2>
+					</div>
+					<div class="col l4 m6 s12">
+						<div class="point">
+							<h3>нам всё по плечу</h3>
+						</div>
+						<p>Команда «Бурый Медведь» из Краснодара это надёжный коллектив опытных промышленных альпинистов, способных выполнить все виды высотных работ на объектах любой сложности</p>
+					</div>
+					<div class="col l4 m6 s12">
+						<div class="point">
+							<h3>честность во всём</h3>
+						</div>
+						<p>Обеспечиваем подробное документирование услуг, а также оперативное предоставление соответствующих отчетов.</p>
+					</div>
+					<div class="col l4 m8 offset-m2 s12">
+						<div class="point">
+							<h3>выше только горы</h3>
+						</div>
+						<p>Мы являемся пионерами в сфере промышленного альпинизма, наш многолетний опыт и профессиональное исполнение являются основой для максимальной удовлетворенности клиентов.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="categories">
+			<div class="row flex no-margin">
+				<div class="col l4 m12 info">
+					<div class="pin-wrapper">
+						<div class="pin">
+							<h2 class="styled-dark">Наши услуги</h2>
+							<p>Архитектурное освещение зданий — необходимость в реалиях такого большого современного города, как Краснодар. Наша команда промышленных альпинистов осуществляет монтаж наружной подсветки, которая помогаем девелоперам ярко выделить свои объекты на фоне конкурентов будь то проекты типовой застройки, элитные многоквартирные комплексы, промышленные предприятия или даже мосты.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col l8 list">
+					<div class="row flex">
+						@@loop('./parts/category.html', './data/categories.json')
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="our-works">
+			<div class="container">
+				<div class="col s12">
+					<h2 class="center-align">Наших рук дело</h2>
+					<div class="swiper" id="works-slider">
+						<div class="swiper-wrapper">
+							@@loop('./parts/our_work.html', './data/our_works.json')
+						</div>
+						<a href="#!" class="prev"><i class="mdi mdi-chevron-left"></i></a>
+						<a href="#!" class="next"><i class="mdi mdi-chevron-right"></i></a>
+					</div>
+					<div class="works-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<section id="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<h2 class="center-align">Нам доверяют</h2>
+						<div class="swiper" id="clients-slider">
+							<div class="swiper-wrapper">
+								@@loop('./parts/client.html', './data/clients.json')
+							</div>
+						</div>
+						<div class="clients-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('./parts/contacts-block.html')
+	</main>
+	@@include('./parts/footer.html')
+	<script src="/js/master.js"></script>
+</body>
+</html>

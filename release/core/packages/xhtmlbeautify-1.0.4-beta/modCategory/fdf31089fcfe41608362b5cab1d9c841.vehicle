@@ -1,0 +1,54 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      'b5ab833898348a9e850cdfe2c574265e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"XHTML Beautify","description":"XHTML Beautify","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * XHTML Beautify - Clean up MODx source code output\\n *\\n * Copyright (c) 2012 Gold Coast Media Ltd\\n *\\n * This file is part of XHTML Beautify.\\n *\\n * XHTML Beautify is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * XHTML Beautify is distributed in the hope that it will be useful, but \\n * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or \\n * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more\\n * details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * XHTML Beautify; if not, write to the Free Software Foundation, Inc., 59 \\n * Temple Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package  xhtmlbeautify\\n * @author   Dan Gibbs <dan@goldcoastmedia.co.uk>\\n *           Till Kr\\u00fcss <http:\\/\\/tillkruess.com\\/projects\\/wordpress\\/wp-beautifier\\/>\\n *\\/\\n\\n$enabled = $modx->getOption(\'xhtmlbeautify.enabled\');\\n\\nif($modx->event->name == \'OnWebPagePrerender\' AND $enabled)\\n{\\n\\trequire $modx->getOption(\'core_path\') . \'components\\/xhtmlbeautify\\/xhtmlbeautify.class.php\';\\n\\t$xhtmlbeautify = new XhtmlBeautify($modx);\\n\\t$output = $xhtmlbeautify->run();\\n\\tunset($xhtmlbeautify);\\n\\t\\n\\treturn $output;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * XHTML Beautify - Clean up MODx source code output\\n *\\n * Copyright (c) 2012 Gold Coast Media Ltd\\n *\\n * This file is part of XHTML Beautify.\\n *\\n * XHTML Beautify is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * XHTML Beautify is distributed in the hope that it will be useful, but \\n * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or \\n * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more\\n * details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * XHTML Beautify; if not, write to the Free Software Foundation, Inc., 59 \\n * Temple Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package  xhtmlbeautify\\n * @author   Dan Gibbs <dan@goldcoastmedia.co.uk>\\n *           Till Kr\\u00fcss <http:\\/\\/tillkruess.com\\/projects\\/wordpress\\/wp-beautifier\\/>\\n *\\/\\n\\n$enabled = $modx->getOption(\'xhtmlbeautify.enabled\');\\n\\nif($modx->event->name == \'OnWebPagePrerender\' AND $enabled)\\n{\\n\\trequire $modx->getOption(\'core_path\') . \'components\\/xhtmlbeautify\\/xhtmlbeautify.class.php\';\\n\\t$xhtmlbeautify = new XhtmlBeautify($modx);\\n\\t$output = $xhtmlbeautify->run();\\n\\tunset($xhtmlbeautify);\\n\\t\\n\\treturn $output;\\n}"}',
+        'guid' => 'b8fa6bf7312718a406e5bb43e25c6571',
+        'native_key' => 1,
+        'signature' => '8ed4a4491469cad6bc7c7cacd9e063f5',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'xhtmlbeautify',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"xhtmlbeautify-1.0.4-beta\\/modCategory\\/fdf31089fcfe41608362b5cab1d9c841.install.script.resolver","type":"php","name":"install.script"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"xhtmlbeautify-1.0.4-beta\\/modCategory\\/fdf31089fcfe41608362b5cab1d9c841\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"xhtmlbeautify"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5ba1117685076b3f3edf1c05ee8a4e4f',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'fdf31089fcfe41608362b5cab1d9c841',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"XHTML Beautify"}',
+);

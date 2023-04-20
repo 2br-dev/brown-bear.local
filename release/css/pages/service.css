@@ -1,0 +1,76 @@
+body section#hero {
+  background-position: center center; }
+  body section#hero .hero-content {
+    padding-bottom: 15%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 4vmax; }
+    @media (max-width: 1200px) {
+      body section#hero .hero-content {
+        padding-bottom: 35%; } }
+
+body section#gallery #service-slider {
+  height: 100%;
+  min-height: 60vh; }
+  body section#gallery #service-slider .swiper-slide .lazy {
+    height: 100%;
+    background-size: cover;
+    background-position: center center; }
+
+body section#gallery .service-slider-wrapper {
+  position: relative; }
+  body section#gallery .service-slider-wrapper h2 {
+    margin: 0;
+    padding: .5em;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    color: #fff;
+    text-align: center; }
+  body section#gallery .service-slider-wrapper .service-prev, body section#gallery .service-slider-wrapper .service-next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 32px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    z-index: 2; }
+    body section#gallery .service-slider-wrapper .service-prev:hover, body section#gallery .service-slider-wrapper .service-next:hover {
+      background-color: rgba(0, 0, 0, 0.8); }
+  body section#gallery .service-slider-wrapper .service-next {
+    left: unset;
+    right: 0; }
+
+body section#gallery .gallery-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center; }
+  body section#gallery .gallery-wrapper [data-slide] {
+    margin-bottom: 30px;
+    transition: box-shadow .2s, filter .2s;
+    cursor: pointer;
+    position: relative; }
+    body section#gallery .gallery-wrapper [data-slide]:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: box-shadow .2s;
+      box-shadow: 0 0 0 0px #F6CA29 inset;
+      position: absolute; }
+    body section#gallery .gallery-wrapper [data-slide] img {
+      display: block; }
+    body section#gallery .gallery-wrapper [data-slide]:hover {
+      filter: brightness(1.2); }
+    body section#gallery .gallery-wrapper [data-slide].active:before {
+      box-shadow: 0 0 0 6px #F6CA29 inset; }

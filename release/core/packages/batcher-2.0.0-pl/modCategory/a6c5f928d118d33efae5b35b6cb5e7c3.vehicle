@@ -1,0 +1,96 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'batcher',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"batcher-2.0.0-pl\\/modCategory\\/a6c5f928d118d33efae5b35b6cb5e7c3\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"batcher"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"batcher-2.0.0-pl\\/modCategory\\/a6c5f928d118d33efae5b35b6cb5e7c3\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"batcher"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"batcher-2.0.0-pl\\/modCategory\\/a6c5f928d118d33efae5b35b6cb5e7c3.setupoptions.resolver.resolver","type":"php","name":"setupoptions.resolver"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"batcher-2.0.0-pl\\/modCategory\\/a6c5f928d118d33efae5b35b6cb5e7c3.stercextra.resolver.resolver","type":"php","name":"stercextra.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '228b0f66eff122048510a52d3a358464',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'a6c5f928d118d33efae5b35b6cb5e7c3',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"Batcher","rank":0}',
+);

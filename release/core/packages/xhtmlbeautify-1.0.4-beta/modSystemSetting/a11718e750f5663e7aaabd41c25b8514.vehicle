@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'xhtmlbeautify',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '30bb86dd3a10fb78c98a9987a408afe7',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a11718e750f5663e7aaabd41c25b8514',
+  'native_key' => 'xhtmlbeautify.indent_output',
+  'object' => '{"key":"xhtmlbeautify.indent_output","value":1,"xtype":"combo-boolean","namespace":"xhtmlbeautify","area":"output-cleaning","editedon":null,"description":"setting_xhtmlbeautify.indent_output_desc"}',
+);

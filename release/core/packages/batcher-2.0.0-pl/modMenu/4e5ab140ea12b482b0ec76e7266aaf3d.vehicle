@@ -1,0 +1,30 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'batcher',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cb55c80d55ac0d99e4488ee2db03bf4b',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '4e5ab140ea12b482b0ec76e7266aaf3d',
+  'native_key' => 'batcher',
+  'object' => '{"text":"batcher","parent":"components","action":"home","description":"batcher.menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"batcher"}',
+);

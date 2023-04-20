@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'xhtmlbeautify',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'dcc9cb74b829cc28a70e4f70ee3c29ba',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6141a1afc44fadd94974aad91560418e',
+  'native_key' => 'xhtmlbeautify.ignored_attributes',
+  'object' => '{"key":"xhtmlbeautify.ignored_attributes","value":"onabort, onblur, onchange, onclick, ondblclick, onerror, onfocus, onkeydown, onkeypress, onkeyup, onload, onmousedown, onmousemove, onmouseout, onmouseover, onmouseup, onreset, onselect, onsubmit, onunload","xtype":"textarea","namespace":"xhtmlbeautify","area":"ignore-config","editedon":null,"description":"setting_xhtmlbeautify.ignored_attributes_desc"}',
+);

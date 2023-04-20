@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'xhtmlbeautify',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ea93310d54cdf5569021dabc22c80de1',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4f8a009b541c1a21cbeee8bd3c975106',
+  'native_key' => 'xhtmlbeautify.enabled',
+  'object' => '{"key":"xhtmlbeautify.enabled","value":1,"xtype":"combo-boolean","namespace":"xhtmlbeautify","area":"output-cleaning","editedon":null,"description":"setting_xhtmlbeautify.enabled_desc"}',
+);

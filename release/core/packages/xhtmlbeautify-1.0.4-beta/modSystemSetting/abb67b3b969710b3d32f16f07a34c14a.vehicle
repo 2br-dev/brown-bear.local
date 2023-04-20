@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'xhtmlbeautify',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c8c34e66ead2b1ec8c52235693ee5c45',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'abb67b3b969710b3d32f16f07a34c14a',
+  'native_key' => 'xhtmlbeautify.remove_comments',
+  'object' => '{"key":"xhtmlbeautify.remove_comments","value":0,"xtype":"combo-boolean","namespace":"xhtmlbeautify","area":"output-cleaning","editedon":null,"description":"setting_xhtmlbeautify.remove_comments_desc"}',
+);

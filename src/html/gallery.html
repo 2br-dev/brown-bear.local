@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('./parts/head.html', {title: 'Фотогалерея', style: 'gallery'})
+</head>
+<body>
+	@@include('./parts/header.html')
+	<main id="gallery">
+		<section id="gallery-content" class="no-margin">
+			<div class="row flex no-margin">
+				<div class="col l4 m4 hide-m-down no-padding">
+					<div class="slider-wrapper">
+						<div class="overlay">
+							<div class="h1-wrapper">
+								<h1 class="hide-m-down">Наши работы</h1>
+							</div>
+							<div class="gallery-thumbs">
+								@@loop('./parts/gallery-page-thumb.html', './data/gallery-page.json')
+							</div>
+						</div>
+						<div class="slider">
+							<div class="swiper" id="background-gallery">
+								<div class="swiper-wrapper">
+									@@loop('./parts/gallery-page-slide.html', './data/gallery-page.json')
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col l8 m8 s12 no-padding main-image">
+					<div class="header-wrapper">
+						<a href="javascript:void(0);" class="hide-m-up main-prev mdi mdi-chevron-left"></a>
+						<h1 class="hide-m-up">Наши работы</h1>
+						<a href="javascript:void(0);" class="hide-m-up main-next mdi mdi-chevron-right"></a>
+					</div>
+					<div class="description-field">
+						<div class="description-content">
+							<div class="description-header">
+								<div class="links hide-m-down">
+									<a href="javascript:void(0);" class="main-prev mdi mdi-chevron-left"></a>
+									<a href="javascript:void(0);" class="main-next mdi mdi-chevron-right"></a>
+								</div>
+								<h2 id="slide-name"></h2>
+								<div class="nav">
+									<span class="current"></span>
+									<span class="separator">/</span>
+									<span class="total"></span>
+								</div>
+							</div>
+							<p id="slide-description"></p>
+						</div>
+					</div>
+					<div class="swiper" id="main-gallery">
+						<div class="swiper-wrapper">
+							@@loop('./parts/gallery-zoomer-slide.html', './data/gallery-page.json')
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('./parts/contacts-block.html')
+	</main>
+	@@include('./parts/footer.html')
+	<script src="/js/master.js"></script>
+</body>
+</html>
